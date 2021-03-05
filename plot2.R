@@ -26,7 +26,6 @@ df$Datetime <- paste(df$Date, df$Time, sep = " ")
 
 ## convert related columns
 df$Datetime <- strptime(df$Datetime, "%d/%m/%Y %H:%M:%S")
-df$Global_active_power <- as.numeric(df$Global_active_power)
 
 ## switch the current device to PNG file with a width of 480 pixels and a height of 480 pixels
 png(filename = "plot2.png", width = 480, height = 480)

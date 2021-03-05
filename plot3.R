@@ -26,9 +26,6 @@ df$Datetime <- paste(df$Date, df$Time, sep = " ")
 
 ## convert related columns
 df$Datetime <- strptime(df$Datetime, "%d/%m/%Y %H:%M:%S")
-df$Sub_metering_1 <- as.numeric(df$Sub_metering_1)
-df$Sub_metering_2 <- as.numeric(df$Sub_metering_2)
-df$Sub_metering_3 <- as.numeric(df$Sub_metering_3)
 
 ## switch the current device to PNG file with a width of 480 pixels and a height of 480 pixels
 png(filename = "plot3.png", width = 480, height = 480)

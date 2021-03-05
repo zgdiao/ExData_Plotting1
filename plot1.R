@@ -21,9 +21,6 @@ df <- read.table(text = t, sep = ';', col.names = n, na.strings = '?')
 #-------------------------------------------------------------------------------
 # Plot 1: Create a histogram for the global active power
 
-## convert related columns
-df$Global_active_power <- as.numeric(df$Global_active_power)
-
 ## switch the current device to PNG file with a width of 480 pixels and a height of 480 pixels
 png(filename = "plot1.png", width = 480, height = 480)
 
